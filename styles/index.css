@@ -1,18 +1,26 @@
 body{
     width: 100%;
     height: 100%;
+    background-color: #0F172A;
+    height: 100%;
     top:0;
+    color:white;
+    left:0;
 }
 *{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color:coral;
 }
 #main-container{
-
     width: 100%;
     height: 100%;
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
+    display: block;
     display: flex;
 }
 #home-logo,#contact-logo,#about-logo{
@@ -20,20 +28,23 @@ body{
     margin: 0 auto;
 }
 #header{
+    font-weight: bold;
+    top:0;
+    left:0;
+    background-color:#0F172A;
     display: flex;
     position: fixed;
-    width: 90%;
+    width: 100%;
     height:10%;
     margin-left: auto;
     margin-right: auto;
-    justify-content: flex-end; 
+    justify-content:right; 
     align-items: center;
-
 }
 #home,#about,#contact{
     align-items: center;
     display: flex;
-    margin-right:2%;
+    margin-right:5%;
     width:10%;
     height:100%;
 }
@@ -48,28 +59,32 @@ body{
     margin-left: auto;
     margin-right: auto;
     overflow-x: hidden;
-    display: flex;
+    display: block;
     width: 90%;
 }
 #title{
     font-size: larger;
     width:50%;
-    display: block;   
+    display: block;  
+}
+#container{
+    display: flex;
 }
 #photo-container{ 
-    width:50%;
+    width:40%;
     display: flex;
+    margin: 0 auto;
     justify-content: center;
     background-color:rgb(49, 189, 245);
-    border-bottom-left-radius: 39%;
-    border-top-right-radius: 40%;
-    border-top-left-radius: 10%;
-    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 25%;
+    border-top-right-radius: 25%;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
 }
 #photo{
-    width: 70%;
+    width: 100%;
 }
-#hey{
+#hey,#titre{
   color:rgb(49, 189, 245);
 }
 #dev{
@@ -85,8 +100,62 @@ body{
 }
 #button{
    width:30%;
+   font-size:large;
    margin-left:3%;
-   height:30px;
+   height:40px;
    background-color: white;
    border:1px rgb(49,189,245) solid ;
+   border-radius:10px;
 }
+#button:hover{
+    background-color:rgb(49,189,245);
+    color: white;
+}
+#other,#mycontact{
+    margin-top:5%;
+    width: 100%;
+}
+#skill-container{
+  width: 50%;
+  background-color: #ddd;
+}
+#skills-container{
+    width: 100%;
+    display: flex;
+}
+#skills1,#skills2{
+    width: 50%;
+}
+.skills {
+    text-align: right;
+    color: white;
+}
+.html {
+ width: 85%; 
+ background-color:coral;
+}
+.js{
+    width:65%;
+    background-color: coral;
+}
+.node{
+    width:60%;
+    background-color: coral;
+}
+.mongodb{
+    background-color: coral;
+    width: 55%;
+}
+.react{
+    background-color: coral;
+    width:57%;
+}
+.sql{
+    background-color: coral;
+    width: 55%;
+}
+.figma{
+    background-color: coral;
+    width: 70%;
+}
+  
