@@ -12,9 +12,9 @@ body{
 }
 a{
     text-decoration: none;
-    color:white;
+    color:#ddd;
 }
-a:hover{
+#header a:hover{
     color:coral;
 }
 #main-container{
@@ -75,6 +75,7 @@ a:hover{
     display: flex;
     margin: 0 auto;
     justify-content: center;
+    border:2px solid white;
     background-color:rgb(49, 189, 245);
     border-bottom-left-radius: 25%;
     border-top-right-radius: 25%;
@@ -100,16 +101,20 @@ a:hover{
 }
 #button{
    width:30%;
-   font-size:large;
    margin-left:3%;
    height:40px;
-   background-color: white;
-   border:1px rgb(49,189,245) solid ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color:#0F172A;
+   background-color:white;
+   border:2px rgb(49,189,245) solid ;
    border-radius:10px;
 }
 #button:hover{
     background-color:rgb(49,189,245);
     color: white;
+    border:2px solid white;
 }
 #other,#mycontact{
     margin-top:5%;
@@ -118,10 +123,13 @@ a:hover{
 #skill-container{
   width: 50%;
   background-color: #ddd;
+  border:0.5px solid white;
+  border-radius: 10px;
 }
 #skills-container{
     width: 100%;
     display: flex;
+    
 }
 #skills1,#skills2{
     width: 50%;
@@ -129,6 +137,8 @@ a:hover{
 .skills {
     text-align: right;
     color: white;
+    border-radius: 10px;
+    border:0.5px solid white;
 }
 .html {
  width: 85%; 
@@ -158,4 +168,51 @@ a:hover{
     background-color: coral;
     width: 70%;
 }
-  
+#logo{
+    width: 30px;
+    height: 30px;
+}
+.logo-container{
+    display: flex;
+    width:30%;
+    /* background-color:#ddd; */
+    margin-top:2%;
+}
+#list-contact{
+    display: flex;
+    width:70%;
+}
+#myprojects{
+    margin-top: 5%;
+}
+#projects-container{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+#project{
+    display: block;
+    width: 40%;
+    margin-right: 5%;
+    border:2px solid rgb(49, 189, 245);
+    border-radius: 10px;
+    padding: 3%;
+}
+#project:hover{
+    background-color: #1e2b47;
+    transition:1s ease;
+}
+#project-title{
+    color:coral;
+}
+#description{
+    font-weight: bold;
+}
+#technos{
+    display: flex;
+}
+.logo{
+    margin-right: 5%;
+    width: 50px;
+    height: 50px;
+}
