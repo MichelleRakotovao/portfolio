@@ -12,7 +12,7 @@ body{
 }
 a{
     text-decoration: none;
-    color:#ddd;
+    color:white;
 }
 #header a:hover{
     color:coral;
@@ -64,11 +64,16 @@ a{
 }
 #title{
     font-size: larger;
-    width:50%;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
     display: block;  
 }
 #container{
     display: flex;
+}
+#container h1{
+    font-size:50px ;
 }
 #photo-container{ 
     width:40%;
@@ -76,7 +81,7 @@ a{
     margin: 0 auto;
     justify-content: center;
     border:2px solid white;
-    background-color:rgb(49, 189, 245);
+    /* background-color:rgb(49, 189, 245); */
     border-bottom-left-radius: 25%;
     border-top-right-radius: 25%;
     border-top-left-radius: 30%;
@@ -85,23 +90,25 @@ a{
 #photo{
     width: 100%;
 }
+#hey,#dev{
+    font-size: 50px;
+}
 #hey,#titre{
   color:rgb(49, 189, 245);
+  
 }
 #dev{
   color:coral;
 }
-#welcome{
-    color:rgb(49, 189, 245);
-}
+
 #button-container{
     margin-top: 5%;
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
 }
 #button{
-   width:30%;
-   margin-left:3%;
+   width:20%;
+   margin-right:3%;
    height:40px;
    display: flex;
    align-items: center;
@@ -199,8 +206,9 @@ a{
     padding: 3%;
 }
 #project:hover{
-    background-color: #1e2b47;
-    transition:1s ease;
+    background-color:#17223b;
+    transition:0.5s ease-in-out;
+    cursor: pointer;
 }
 #project-title{
     color:coral;
@@ -215,4 +223,58 @@ a{
     margin-right: 5%;
     width: 50px;
     height: 50px;
+}
+/* animation texte */
+#dev>span{
+    display: inline-block;
+    animation:flip 2.6s infinite linear;
+}
+#dev>span:nth-child(even){
+    color:white;
+}
+@keyframes flip{
+    35%{
+        transform:rotateX(360deg);
+    }
+    100%{
+        transform:rotateX(360deg);
+    }    
+}
+#dev>span:nth-child(2){
+    animation-delay:0.3s;
+}
+#dev>span:nth-child(3){
+    animation-delay:0.6s;
+}
+
+#dev>span:nth-child(4){
+    animation-delay:0.9s;
+}
+
+#dev>span:nth-child(5){
+    animation-delay:1.2s;
+}
+
+#dev>span:nth-child(6){
+    animation-delay:1.5s;
+}
+
+#dev>span:nth-child(7){
+    animation-delay:1.8s;
+}
+
+#dev>span:nth-child(8){
+    animation-delay:2.1s;
+}
+
+#dev>span:nth-child(9){
+    animation-delay:2.4s;
+}
+
+#dev>span:nth-child(10){
+    animation-delay:2.7s;
+}
+
+#dev>span:nth-child(11){
+    animation-delay:3s;
 }
