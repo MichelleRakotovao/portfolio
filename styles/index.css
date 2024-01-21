@@ -128,7 +128,7 @@ a{
     width: 100%;
 }
 #skill-container{
-  width: 50%;
+  width: 80%;
   background-color: #ddd;
   border:0.5px solid white;
   border-radius: 10px;
@@ -246,35 +246,144 @@ a{
 #dev>span:nth-child(3){
     animation-delay:0.6s;
 }
-
 #dev>span:nth-child(4){
     animation-delay:0.9s;
 }
-
 #dev>span:nth-child(5){
     animation-delay:1.2s;
 }
-
 #dev>span:nth-child(6){
     animation-delay:1.5s;
 }
-
 #dev>span:nth-child(7){
     animation-delay:1.8s;
 }
-
 #dev>span:nth-child(8){
     animation-delay:2.1s;
 }
-
 #dev>span:nth-child(9){
     animation-delay:2.4s;
 }
-
 #dev>span:nth-child(10){
     animation-delay:2.7s;
 }
-
 #dev>span:nth-child(11){
     animation-delay:3s;
+}
+/* responsive */
+@media screen and (max-width:855px){
+    .logo{
+        margin-right: 5%;
+        width: 40px;
+        height:40px;
+    }
+    #skill-container{
+        width: 80%;
+    }
+    #hey,#dev,#et{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width:770px){
+    #home-logo,#contact-logo,#about-logo{
+        visibility: hidden;
+    }
+    #welcome{
+        font-size:15px;
+    }
+}
+@media screen and (max-width:770px) and (min-width:660px){
+    #header a{
+        font-size: 85%;
+    }
+    .logo{
+        width:35px;
+        height:35px;
+    }
+    #hey,#dev,#et{
+        font-size: 40px;
+    }
+    #button{
+        width: 20%;
+        height:35px;
+        font-size:75%;
+    }
+    #titre{
+        font-size:35px;
+    }
+}
+@media screen and (min-width:550px)and (max-width:660px){
+    .logo{
+        width:30px;
+        height:30px;
+    }
+    #header a{
+        font-size:75%;
+    }
+    #button{
+        font-size:70%;
+        width: 18%;
+        height:25px;
+    }
+    #hey,#dev,#et{
+        font-size: 30px;
+    }
+    #titre{
+        font-size:25px;
+    }
+    #skills1,#skills2{
+        width: 100%;
+    }
+    #home,#about,#contact{
+        width: 20%;
+    }
+}
+@media screen and (max-width:550px){
+    #header a{
+        font-size:80%;
+    }
+    #skills-container{
+        display: block;
+    }
+    #skills1,#skills2{
+        width: 100%;
+    }
+    #hey,#dev,#et{
+        font-size: 25px;
+    }
+    #titre{
+        font-size:20px;
+    }
+    #home,#about,#contact{
+        width: 20%;
+    }
+    #button{
+        font-size:70%;
+        height:25px;
+        width: 30%;
+    }
+    .logo{
+        width:30px;
+        height:30px;
+    }
+    #projects-container{
+        display: block;
+    }
+    #project{
+        width: 90%;
+        margin-top:5%;
+    }
+    #skill-container{
+        width: 90%;
+    }
+    #list-contact{
+        display: block;
+    }
+    .logo-container{
+        margin-top: 5%;
+    }
+    #button-container{
+        margin-top:0%;
+    }
+
 }
